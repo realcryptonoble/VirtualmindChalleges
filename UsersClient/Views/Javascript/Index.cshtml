@@ -1,0 +1,72 @@
+﻿<p>
+    function employee(firstName, lastName, salary) {<br>
+    this.firstName = firstName;<br>
+    this.lastName = lastName;<br>
+    this.salary = salary;<br>
+    }<br><br>
+</p>
+
+<p>
+    employee.prototype.IncreaseSalary = function () {<br>
+    this.salary = this.salary + 1000;<br>
+    };<br><br>
+</p>
+
+<p>
+    employee.prototype.ShowDetails = function () {<br>
+    console.log("First name: " + this.firstName);<br>
+    console.log("Last name: " + this.lastName);<br>
+    console.log("Salary: " + this.salary);<br>
+    };<br><br>
+</p>
+
+<p>
+    function MultiplyBy() {<br>
+    console.log(mul(2)(3)(4));<br>
+    console.log(mul(4)(3)(4));<br>
+    }<br><br>
+</p>
+
+<p>
+    function mul(a) {<br>
+    return function (b) {<br>
+    return function (c) {<br>
+    return a * b * c;<br>
+    };<br>
+    };<br>
+    }<br><br>
+</p>
+
+<p>
+    function Longest_Country_Name(countries) {<br>
+    return country_name.reduce(function (lname, country) {<br>
+    return lname.length > country.length ? lname : country;}, "");<br>
+    }<br><br>
+</p>
+
+<p>
+    function insert_Row() {<br>
+    // Find a \<table\><br>
+        element with id="myTable":<br>
+        var table = document.getElementById("myTable");<br><br>
+
+        // Create an empty \<tr\><br>
+            element and add it to the 1st position of the table:<br>
+            var row = table.insertRow(0);<br><br>
+
+            // Insert new cells (\<td\> elements) at the 1st and 2nd position of the "new" \<tr\> element:<br>
+            var cell1 = row.insertCell(0);<br>
+            var cell2 = row.insertCell(1);<br>
+
+            // Add some text to the new cells:<br>
+            cell1.innerHTML = "NEW CELL1";<br>
+            cell2.innerHTML = "NEW CELL2";<br>
+            }<br><br>
+</p>
+
+ <p>
+    function removecolor() {<br>
+    var x = document.getElementById("colorSelect");<br>
+    x.remove(x.selectedIndex);<br>
+    }<br><br>
+</p>
